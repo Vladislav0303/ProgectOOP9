@@ -147,6 +147,11 @@ public class MyVector implements Comparator<Object>, Comparable<Object>{
 
     @Override
     public int compare(Object o1, Object o2) {
-        return 0;
+        if(o1.equals(o2)) {
+            return 1;
+        }
+        else {
+            return 0;
+        }
     }
 }
